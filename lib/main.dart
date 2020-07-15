@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:settings_rate_share_support/settings/settings_screen.dart';
+import 'package:settings_rate_share_support/screens/settings_screen.dart';
 
 void main() {
   runApp(MyApp());
