@@ -12,14 +12,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Settings Tutorial Demo',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        brightness: Brightness.dark,
-        primarySwatch: Colors.blue,
-        primaryColor: const Color(0xFF212121),
-        accentColor: const Color(0xFF05c4e6),
-        canvasColor: const Color(0xFF303030),
-        visualDensity: VisualDensity.adaptivePlatformDensity,
-      ),
+      theme: ThemeData.dark(),
       home: MyHomePage(),
     );
   }
@@ -37,10 +30,9 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-
         title: Text("Settings"),
       ),
-      body: SettingsScreen()
+      body: SettingsScreen(),
     );
   }
 }
